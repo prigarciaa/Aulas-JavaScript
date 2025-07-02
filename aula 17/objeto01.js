@@ -2,7 +2,7 @@
 console.log(typeof amigo) // object
 console.log(amigo) // {}
 */
-let amigo = {nomer: 'José',
+let amigo = {nome: 'José',
     sexo: 'M',
     peso: 85.4, 
     engordar(p=0) {
