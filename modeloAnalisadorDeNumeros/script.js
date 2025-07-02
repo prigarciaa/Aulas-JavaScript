@@ -12,14 +12,16 @@ function isNumero(n) {
  }
 
 function inLista(n, l) {
-    if (l.indexof(Number(n)) != -1) {
+    if (l.indexOf(Number(n)) != -1) {
         return true
+    } else {
+        return false
     }
  }
 
 function adicionar() {
-    if (isNumero(num.value) && inLista(num.value, valores)) {
-        window.alert("Tudo certo!")
+    if (isNumero(num.value) && !inLista(num.value, valores)) {
+        window.alert('Tudo certo!')
     } else {
         window.alert('Valor inválido ou já encontrado na lista.')
     }
